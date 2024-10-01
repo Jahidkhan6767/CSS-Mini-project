@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+  font-family: "Montserrat", sans-serif;;
+}
+.mainbox{
+    background-image: url(camera.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.btnone i{
+    position: absolute;
+    left: 16px;
+    color: rgba(255, 255, 255, 0.5); 
+    font-size: 30px;
+    font-weight: 700px;
+    line-height: 60px;
+    cursor: pointer;
+    padding: 0 0 18px 15px ;
+}
+
+
+.sidebarmenu{
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    left: -300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.5s  linear; 
+}
+.sidebarmenu .logo{
+    position: absolute;
+    width: 100%;
+   line-height: 60px;
+   box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5); 
+   height: 60px;
+
+}
+.sidebarmenu .logo h3{
+    display: none;
+}
+.sidebarmenu .logo a{
+    position: absolute;
+    color:  rgba(255, 255, 255, 0.5); 
+    left: 80px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+}
+.sidebarmenu .btntwo i{
+    color: gray;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 275px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.2s  linear;
+ 
+}
+.sidebarmenu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+
+}
+.sidebarmenu .menu li{
+    margin: 6px;
+    padding: 14px 20px;
+
+}
+.sidebarmenu .menu i,a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5); 
+    font-size: 20px;
+
+}
+.sidebarmenu .menu i{
+    padding-right: 8px  ;
+}
+#socialmedia{
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    left: 25%;
+    bottom: 20px;
+}
+#socialmedia i{
+   color: white;
+   opacity: 0.5;
+   padding: 5px;
+
+    font-size: 20px;
+  
+}
+#check{
+    display: none;
+}
+.sidebarmenu .menu li:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); 
+    transition: all 0.3s linear;
+
+}
+.btnone i:hover{
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius:50px; 
+   
+}
+
+.btntwo i:hover{
+    font-size: 30px ;
+}
+#socialmedia i:hover{
+    opacity: 1;
+    transform: scale(1.3);
+    transition: all 0.3s linear;
+
+
+}
+#check:checked ~ .sidebarmenu{
+    left: 0;
+    box-shadow: 0 0 10px  rgba(255, 255, 255, 0.5);;
+
+}
+#check:checked ~ .btnone i{
+    opacity: 0 ;
+}
+#check:checked ~ .sidebarmenu .btntwo i{
+    opacity: 1;
+}
